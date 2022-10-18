@@ -1,9 +1,9 @@
 ﻿Console.Write("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int count = 0;
+int n = Convert.ToInt32(Console.ReadLine());
+int count = 2;
 Console.Write("Четные числа диапозона от 1 до N: ");
-while (count < N-1)
+while (count < n-1)
 {
-    Console.Write((count+2)+" ");
+    Console.Write(count+" ");
     count = count + 2;
 }
