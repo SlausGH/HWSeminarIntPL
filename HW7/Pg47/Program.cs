@@ -4,8 +4,18 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-double[,] mtrx = CreateMatrixRnd(3, 4, -100, 100);
+Console.WriteLine("Введите кол-во строк и столбцов через Entr");
+int m = EnterNums();
+int n = EnterNums();
+double[,] mtrx = CreateMatrixRnd(m, n, -100, 100);
+Console.WriteLine($"m = {m}, n = {n}");
 PrintMatrix(mtrx);
+
+int EnterNums()
+{
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
 
 double[,] CreateMatrixRnd(int rows, int columns, int min, int max)
 {
